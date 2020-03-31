@@ -1,0 +1,82 @@
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 'appbar chatbar chatbar'
+                         'chatssection chatarea profilesection';
+}
+.appbar{
+    grid-area: appbar;
+    background-color: rgb(231, 231, 230);
+    display:flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-dp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 0 0 0 10px;
+}
+.appbar-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.appbar-list li{
+    list-style: none;
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+.chatbar{
+    grid-area: chatbar;
+}
+.chatarea{
+    grid-area:chatarea;
+}
+.chatssection{
+    grid-area:chatssection;
+}
+.search-section{
+    height: 40px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-section-inner{
+    background-color: white;
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.search-input{
+    border-style: none;
+    width: 85%;
+    mask-border-repeat: none;
+}
+.profilesection{
+    grid-area: profilesection;
+}
+.chat-section{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-dp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px;
+    
+}
+.chat-content{
+    display: flex;
+    flex-direction: column;
+}
